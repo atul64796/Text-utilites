@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
 body{
-  background:url("https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-  background-size:cover ;
   
-  background-repeat: no-repeat;
+  background: linear-gradient(42deg, #ba5fff, #7bfe8c);
  
 }
+

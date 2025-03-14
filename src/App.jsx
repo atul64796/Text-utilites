@@ -37,12 +37,12 @@ function App() {
 
   return (
     <>
-      <div className="border-1  flex flex-col gap-20 p-10 bg-white/10  backdrop-blur-sm">
-        <h1 className="text-5xl font-bold my-5">Text Utilities</h1>
+      <div className="  flex flex-col gap-20  p-7    ">
+        <h1 className="text-5xl font-bold my-5 text-center">Text Utilities</h1>
         <div className="flex justify-center gap-4  border-none">
-          <input
+          <textarea
             type="text"
-            className=" rounded-2xl  h-20  w-[90%] p-4 border-2 outline-0"
+            className=" rounded-2xl  h-50  w-[100%] p-4 border-2 outline-0"
             value={textutils}
             onChange={handlechange}
             placeholder="Enter Your Task"
@@ -52,45 +52,45 @@ function App() {
             }}
           />
         </div>
-        <div className=" h-full gap-4 flex justify-center flex-wrap">
+        <div className="  gap-4 flex justify-center flex-wrap">
           <button
-            className="p-2 rounded-md text-lg    bg-gradient-to-br from-blue-500 to-red-400 "
+            className="p-2 rounded-md text-lg    bg-gradient-to-br from-blue-500 to-red-400 border-1 "
             onClick={(e) => settextutils(textutils.toUpperCase())}
           >
             To Uppercase
           </button>
           <button
-            className="p-2 rounded-md text-lg    bg-gradient-to-br from-cyan-400 to-purple-500 "
+            className="p-2 rounded-md text-lg    bg-gradient-to-br from-cyan-400 to-purple-500 border-1 "
             onClick={(e) => settextutils(textutils.toLowerCase())}
           >
             To Lowercase
           </button>
           <button
-            className="p-2 rounded-md text-lg    bg-gradient-to-br from-green-400 to-cyan-400 "
+            className="p-2 rounded-md text-lg    bg-gradient-to-br from-green-400 to-cyan-400  border-1 "
             onClick={(e) => settextutils(textutils.trim())}
           >
            Remove Space
           </button>
           <button
-            className="bg-gradient-to-bl  from-green-400 to-purple-600 p-2 rounded-md  text-lg "
+            className="bg-gradient-to-bl  from-green-400 to-purple-600 p-2 rounded-md  text-lg border-1  "
             onClick={tooglebold}
           >
             Font Bold
           </button>
           <button
-            className="p-2 rounded-md bg-gradient-to-br from-green-400 to-purple-400  text-lg "
+            className="p-2 rounded-md bg-gradient-to-br from-green-400 to-purple-400  text-lg border-1 "
             onClick={toogleitalic}
           >
             Font Italic
           </button>
           <button
-            className="   bg-gradient-to-br from-green-400 to-purple-400   p-2 rounded-md text-lg "
+            className="   bg-gradient-to-br from-green-400 to-purple-400   p-2 rounded-md text-lg  border-1 "
             onClick={(e) => settextutils("")}
           >
             Clear All
           </button>
           <button
-            className="p-2 rounded-md text-lg    bg-gradient-to-br from-green-400 to-purple-400 "
+            className="p-2 rounded-md text-lg    bg-gradient-to-br from-green-400 to-purple-400 border-1 "
            onClick={()=>navigator.clipboard.writeText(textutils)}
           >
             Copy Text
@@ -101,7 +101,7 @@ function App() {
           <h2 className="text-start text-xl font-bold ">{`Word Count ${counts}`}</h2>
           <h1 className="font-bold text-3xl text-start">Preview</h1>
           <p
-            className="text-start text-xl text-yellow-800 border-1 p-3" 
+            className="text-start text-xl  border-1 p-3 break-words" 
             
             style={{ fontWeight: bold ? "bold" : "normal", fontStyle: italic ? "italic" : "normal", }}
           >
